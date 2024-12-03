@@ -1,0 +1,236 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background: #333;
+  color: rgb(243, 241, 241);
+  padding: 10px 20px;
+}
+
+.pag1 {
+  background-image: url(imagem/fundo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.pag1 h2 {
+  color: rgb(240, 248, 242);
+  font-size: 5rem;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.925); /* Sombra sutil preta */
+}
+
+.pag1 p {
+  color: rgb(245, 255, 253);
+  font-size: 2rem;
+}
+
+.pag2,
+.pag3,
+.pag4 {
+  background-color: #000000;
+}
+
+.pag2,
+.pag3,
+.pag4 h2 {
+  color: rgb(199, 198, 198);
+  font-size: 5rem;
+}
+
+.pag2,
+.pag3,
+.pag4 {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.925); /* Sombra sutil preta */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: rgb(51, 48, 48);
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.product-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 250px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.925); /* Sombra sutil preta */
+}
+
+.product p {
+  font-size: 16px;
+  color: #eee5e5;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.925); /* Sombra sutil preta */
+}
+
+.product button {
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+.products-page {
+  background-image: url("imagem/fundo3.jpg"); /* Caminho para a imagem de fundo */
+  background-size: cover; /* A imagem cobre toda a página */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-attachment: fixed; /* Fixa o fundo ao rolar a página */
+  background-position: center; /* Centraliza a imagem */
+  color: #f7f2f2; /* Cor padrão para o texto */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para telas médias (tablets) */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header,
+  footer {
+    width: 100%;
+  }
+
+  .pag1,
+  .pag4 h2 {
+    width: 100%;
+  }
+
+  .pag1,
+  .pag4 p {
+    width: 100%;
+  }
+
+  .pag2,
+  .pag3,
+  .pag4 {
+    width: 100%;
+  }
+
+  .product {
+    width: 45%;
+  }
+}
+
+/* Estilos para telas pequenas (smartphones) */
+@media (max-width: 350px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+
+  header,
+  footer {
+    width: 100%;
+  }
+
+  .pag1 .pag4 h2 {
+    width: 100%;
+  }
+
+  .pag1,
+  .pag4 p {
+    width: 100%;
+  }
+
+  .pag2,
+  .pag3,
+  .pag4 {
+    width: 100%;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}

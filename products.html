@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="products-page">
+    <header>
+      <nav>
+        <img src="imagem/osman2.png" alt="Logo" class="logo" />
+
+        <div id="userSection">
+          <span id="userName"></span>
+          <button id="logoutBtn">Logout</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2>Produtos Disponíveis</h2>
+      <div id="productList">
+        <div class="product">
+          <img
+            src="imagem/nike 4.avif"
+            alt="Chuteira nike"
+            class="product-image"
+          />
+          <h3>Chuteira Nike</h3>
+          <p>R$959,99</p>
+          <button
+            class="addToCart"
+            data-name="Chuteira Nike Phantom"
+            data-price="959.99"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+        <div class="product">
+          <img src="imagem/nike1.avif" alt="" class="product-image" />
+          <h3>Chuteira nike mercurial 1</h3>
+          <p>R$1299,99</p>
+          <button
+            class="addToCart"
+            data-name="Chuteira nike mercurial 1"
+            data-price="1299.99"
+          >
+            Adicionar ao Carrinho
+          </button>
+        </div>
+      </div>
+      <div class="product">
+        <img src="imagem/nike2.avif" alt="" class="product-image" />
+        <h3>Chuteira Nike mercurial 2</h3>
+        <p>R$899,99</p>
+        <button
+          class="addToCart"
+          data-name="Chuteira Nike mercurial 2"
+          data-price="899.99"
+        >
+          Adicionar ao Carrinho
+        </button>
+      </div>
+
+      <div class="product">
+        <img src="imagem/nike3.avif" alt="" class="product-image" />
+        <h3>Chuteira Nike mercurial 3</h3>
+        <p>R$800,00</p>
+        <button
+          class="addToCart"
+          data-name="Chuteira Nike mercurial 2"
+          data-price="800,00"
+        >
+          Adicionar ao Carrinho
+        </button>
+      </div>
+      <h3>Resumo do Carrinho</h3>
+      <div id="cart">
+        <p>Seu carrinho está vazio.</p>
+      </div>
+
+      <button id="finalizeOrder">Finalizar Pedido</button>
+    </main>
+
+    <footer>
+      <p>© 2024 Osman Outlet chuteiras.</p>
+    </footer>
+  </body>
+</html>
